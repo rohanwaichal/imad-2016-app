@@ -1,11 +1,12 @@
 console.log('Loaded!');
 
-//change the content of main-text
-var element = document.getElementById('main-text');
-element.innerHTML = "New Value";
-
-//move the image
-var img = document.getElementById('madi');
-img.onclick = function (){
-    img.style.marginright = '100px';
-};
+//button counter
+var button = document.getElementById('button');
+var counter = 0;
+button.onclick = function() {
+    
+    //rendering the variable in correct span
+    counter = counter + 1;
+    varspan = document.getElementById("count");
+    span.innerHTML = counter.toString();
+}
